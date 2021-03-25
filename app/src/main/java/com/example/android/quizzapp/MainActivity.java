@@ -1,6 +1,7 @@
 package com.example.android.quizzapp;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -27,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         //Test answer editable
         String correctAnswerThirdQuestion = "int var1 = 1;";
         EditText editText = (EditText)findViewById(R.id.thirdEditText);
-        String thirdQuestionAnswer = editText.getText().toString();
+        String thirdQuestionAnswer = editText.getText().toString().trim();
         //Test answers checkBoxes question
         CheckBox secondQuestionCheckBoxA = (CheckBox)findViewById(R.id.secondCheckboxA);
         CheckBox secondQuestionCheckBoxB = (CheckBox)findViewById(R.id.secondCheckboxA);
@@ -39,14 +40,26 @@ public class MainActivity extends AppCompatActivity {
         if(firstCorrectAnswer)  {
             score++;
         }
+        else {
+            Log.i("wrong", "Question 1, incorrect");
+        }
         if(secondCorrectAnswer){
             score++;
         }
-        if(thirdQuestionAnswer.equals(correctAnswerThirdQuestion)){
+        else {
+            Log.i("wrong", "Question 2, incorrect");
+        }
+        if(thirdQuestionAnswer.equalsIgnoreCase(correctAnswerThirdQuestion)){
             score++;
+        }
+        else {
+            Log.i("wrong", "Question 3, incorrect");
         }
         if(fourthCorrectAnswer) {
             score++;
+        }
+        else {
+            Log.i("wrong", "Question 4, incorrect");
         }
         return score;
     }
