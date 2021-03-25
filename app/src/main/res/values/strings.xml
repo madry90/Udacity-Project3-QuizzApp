@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">QuizzApp</string>
+    <string name="text_header_app">Languaje Java Test</string>
+    <string name="text_introduction_app">Check your knowledge about Java</string>
+    <string name="first_question_text">1.) What method do you have to invoke to run a Java program?</string>
+    <string name="option1_firstQ">do</string>
+    <string name="option2_firstQ">exec</string>
+    <string name="option3_firstQ">main</string>
+    <string name="option4_firstQ">start</string>
+    <string name="second_question_text">2.) Of the following variable declarations, check the ones that are correct.</string>
+    <string name="option1_secondQ">int contador$;</string>
+    <string name="option2_secondQ">String cadena_;</string>
+    <string name="option3_secondQ">char caracter;</string>
+    <string name="option4_secondQ">boolean true;</string>
+    <string name="third_question_text">3.) Define a variable called var1 to store number 1. </string>
+    <string name="third_qestion_hint">Write the correct statement here:</string>
+    <string name="fourth_question_text">4.) For the following variable declaration: final int = 1 ;, which statement is correct?</string>
+    <string name="option1_fourthQ">Variables are not allowed to be initialized when they are declared.</string>
+    <string name="option2_fourthQ">It\'s correct.</string>
+    <string name="option3_fourthQ">You cannot use a reserved word as the name of a variable.</string>
+    <string name="option4_fourthQ">The correct expression would be final int = 1;</string>
+</resources>
